@@ -1,0 +1,336 @@
+body{
+    background-image: url("../img/72.jpg");
+    font-family: 'Pangolin', cursiveArial, Helvetica, sans-serif;
+   position: relative;
+   
+   /* padding-right: 10px; */
+}
+   header {
+    /*margin-top: 200px;*/
+    font-family: 'Pangolin', cursiveArial, Helvetica, sans-serif;
+  position: sticky;
+  
+  top: 10px;
+  z-index: 5;
+  
+  border:1px solid lightseagreen;
+  border-radius: 5px;
+  
+  
+  /* padding: 0 5% 0 5%; */
+  /* left: auto;
+  right: 0; */
+}
+label.toggleMenu{
+    position: relative;
+}
+.koxa-menu label.toggleMenu img {
+    width: 50px;
+    height: 33px;
+    position: absolute;
+    right: 5px;
+    bottom: 4px;
+    width: 4%;
+    
+    
+}
+
+/* .koxa-menu > ul li:last-child{
+    border-right: 3px solid magenta;
+   border-radius: 0 5px 5px;
+} */
+nav.koxa-menu{
+    display: flex;
+    justify-content: space-between;
+    background: lightseagreen;
+}
+
+.hero__section_svg-text_wrapper {
+    width: 55%;
+    
+
+}
+.right__sidebar-wrapper{
+    width: 40%;
+    border-radius: 50px;
+    min-width: 150px;
+    padding-right: 3%;
+   
+    
+    
+    
+}
+.right__sidebar-wrapper img.avatar{
+    width: 90%;
+}
+
+.logo__image {
+    width: 25%;
+    height: 90%;
+    max-height: 43px;
+    
+}
+
+  p.hero-text {
+    font-family: 'Pangolin', cursiveArial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    color: #505F5A;
+  }
+  
+
+.hero__section_svg-text_wrapper text {
+font-size:90px;
+}
+
+
+   .logo__wrapper {
+       width: 150px;
+       
+      
+   }
+   .koxa-menu *{
+    margin: 0;
+    padding: 0;
+   }
+   .koxa-menu{
+       position: relative;
+      
+   }
+   .koxa-menu ul,
+   .koxa-menu ol{
+    list-style: none;
+   }
+   .koxa-menu > ul{
+    display: flex;
+    justify-content: space-around;
+   }
+   .koxa-menu > ul li{
+    position: relative;
+    
+    
+   }
+   .koxa-menu > ul li:first-child{
+    
+   }
+   .koxa-menu > ul li:last-child{
+
+    
+   }
+   i{
+       margin-right: 6px;
+   }
+   .koxa-menu > ul li > a i.fas{
+    position: absolute;
+    top: 15px;
+    left: 12px;
+    font-size: 18px;
+    margin-right: 6px;
+   }
+   .koxa-menu > ul li a{
+    display: block;
+    background: lightseagreen;
+    padding: 1.5vw 3.0vw 1.5vw 3.0vw;
+    font-size: 2.2vw;
+    color: lightyellow;
+    padding: 15px 30px 15px 40px;
+    font-size: 14px;
+    
+    
+    text-decoration: none;
+    text-transform:uppercase;
+    transition: all 0.3s ease;
+   }
+   .koxa-menu > ul li :first-child {
+       /* border-radius: 5px 0 0 5px; */
+   }
+   .koxa-menu li a:hover{
+    background: lightyellow;
+    color: lightseagreen;
+    box-shadow: 1px 5px 10px -5px lightseagreen;
+    transition: all 0.3s ease-in-out; transition: all 0.3s ease;
+   }
+
+
+   
+   /*sub menu*/
+
+   /* Absolute Position SubMenu */
+
+   .koxa-menu li ul{
+
+    display: none;
+    position: absolute;
+   }
+   .koxa-menu li > ul li ul li:last-child{
+    
+   }
+   .koxa-menu li > ul li a{
+    
+    text-transform: none;
+    background: rgb(46, 197, 190);
+    color: rgb(250, 250, 204);
+   }
+   .koxa-menu ul li > ul li:last-child a {
+       
+      border:1px solid transparent;
+       border-radius:0 0 5px 5px ;
+   }
+   .koxa-menu li > ul li ul{
+    position: absolute;
+    right: -150px;
+    top: 0;
+   }
+   .koxa-menu li:hover > ul{
+    display: block;
+    width: 100%;
+   }
+
+   
+   /*==== MEDIA ====*/
+
+
+
+   .koxa-menu [type="checkbox"],
+   .koxa-menu label.toggleSubmenu{
+    display: none;
+   }
+   .koxa-menu label.toggleMenu{
+    background: lightseagreen;
+    display: none;
+    padding: 1.5vw 3.0vw 1.5vw 3.0vw;
+    font-size: 2.2vw;
+    color: lightyellow;
+    cursor: pointer;
+    position: relative;
+    text-transform: uppercase;
+   }
+   
+   .koxa-menu label.toggleMenu .fas{
+    margin-right: 6px;
+    top: 15px;
+    left: 12px;
+    font-size: 18px;
+   }
+
+
+ .hero__section{
+     padding-top: 120px;
+     display: flex;
+     justify-content: center;
+     align-content: center;
+ }
+
+
+img.avatar {
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+/* Mobile Grid MODE */
+
+
+
+
+   @media all and (max-width: 800px){
+
+
+
+
+    .logo__wrapper {
+        display: none;
+    }
+    nav.koxa-menu {
+        width: 100%;
+        display: block;
+    }
+    section.hero__section {
+        padding-top: 40px;
+        flex-wrap: wrap;
+    }
+
+
+    
+    .koxa-menu{
+     overflow: hidden;
+    }
+    .koxa-menu ul{
+     display: block;
+     max-height: 0;
+     transition: max-height 0.3s;
+    }
+    .koxa-menu li>ul li ul{
+     position: absolute;
+     right: auto;
+     top: auto;
+    }
+    .koxa-menu label.toggleMenu{
+     display: block;
+    }
+    input.toggleMenu:checked + label.toggleMenu{
+        background: lightyellow;
+        color: lightseagreen;
+        
+        transition: all 1s ease;
+    }
+    input.toggleMenu:checked ~ ul,
+    input.toggleSubmenu:checked ~ ul{
+     display: block;
+     position: relative;
+     max-height: 5000px;
+     transition: max-height 2s ease-in;
+    }
+    .koxa-menu label.toggleSubmenu{
+     position: absolute;
+     top: 0;
+     right: 0;
+     width: 100%;
+     height: 100%;
+     cursor: pointer;
+     display: block;
+    }
+    input.toggleSubmenu:checked ~ a{
+        background: rgb(26, 148, 142);
+        color: rgb(216, 216, 189);
+    }
+    .koxa-menu label.toggleSubmenu .fa:before{
+     content: "\f0d7";
+     color: lightyellow;
+    }
+    .koxa-menu label.toggleSubmenu .fa{
+     position: absolute;
+     top: 15px;
+     right: 30px;
+    }
+    .koxa-menu input.toggleSubmenu:checked ~ label.toggleSubmenu .fa::before{
+     content: "\f0d8";
+     color: lightyellow;
+    }
+    .hero__section_svg-text_wrapper {
+        width: 95%;
+      
+        
+    
+    }
+    .right__sidebar-wrapper{
+        display: flex;
+        justify-content: center;
+        width: 75%;
+        min-width: 150px;
+        padding: 0;
+        
+        
+    }
+    section.hero__section {
+        width: 95%;
+        padding-top: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* padding-right: 30px; */
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+   }
+
